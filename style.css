@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  background-color: #575563;
+  color: #fff;
+  border: 3px  black;
+  line-height: 3;
+  font-family: "Roboto", sans-serif;
+}
+
+[class*='col'] {
+  float: left;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#survey {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+input, textarea {
+  background-color: #d1d1d1;
+  color: #000;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.button {
+  background-color: #d1d1d1;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 200px;
+  margin: 10px;
+  cursor: pointer;
+}
